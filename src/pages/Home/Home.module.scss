@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+
+.home_top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+
+	@media(max-width: $size-sm) {
+		margin-bottom: 30px;
+	}
+
+	@media(max-width: $size-xs) {
+		margin-bottom: 30px;
+		display: block;
+	}
+
+	&>div:first-child {
+		margin-right: 50px;
+		flex-shrink: 0;
+
+		@media(max-width: $size-sm) {
+			margin-right: 20px;
+		}
+
+		@media(max-width: $size-xs) {
+			margin-right: 0;
+		}
+	}
+
+
+	&>div:last-child {
+		width: 100%
+	}
+}

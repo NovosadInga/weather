@@ -1,0 +1,47 @@
+@import '../../../styles/variables.scss';
+
+.button {
+	border-radius: $border-radius-xs;
+	background: var(#{--card-background-default});
+	box-shadow: $shadow;
+	color: var(#{--text-color-default});
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	padding: 7px 20px;
+
+	@media(max-width: $size-md) {
+		font-size: 16px;
+	}
+
+	@media(max-width: $size-sm) {
+		font-size: 13px;
+		padding: 7px 15px;
+	}
+
+	@media(max-width: $size-xs) {
+		padding: 7px 10px;
+	}
+
+}
+
+.button:global(.filter) {
+	margin-right: 15px;
+
+	@media(max-width: $size-xs) {
+		margin-right: 0;
+	}
+}
+
+.button:global(.active) {
+	background: $color-blue;
+}
+
+.button:global(.error_btn) {
+	background: $color-blue;
+	font-size: 24px;
+
+	@media(max-width: $size-xs) {
+		font-size: 14px;
+	}
+}

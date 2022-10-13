@@ -1,0 +1,94 @@
+@import '../../../styles/variables.scss';
+
+.day {
+	background: var(#{ --day-background-default});
+	border-radius: $border-radius-sm;
+	width: 150px;
+	padding: 11px;
+	cursor: pointer;
+
+	@media(max-width: $size-lg) {
+		width: 115px
+	}
+
+	@media(max-width: $size-md) {
+		width: 90px;
+		padding: 7px;
+	}
+
+	@media(max-width: $size-sm) {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 2fr 1.5fr 1.5fr 1fr 2fr;
+		align-items: center;
+		justify-items: center;
+		margin-bottom: 5px
+	}
+}
+
+.title,
+.temp_day {
+	color: var(#{--text-color-default});
+	margin-bottom: 7px;
+
+	@media(max-width: $size-sm) {
+		margin-bottom: 0;
+	}
+}
+
+
+.title {
+	font-size: 18px;
+
+	@media(max-width: $size-md) {
+		font-size: 14px;
+	}
+
+	@media(max-width: $size-sm) {
+		font-size: 18px;
+	}
+
+	@media(max-width: $size-xs) {
+		font-size: 12px;
+	}
+}
+
+.day_info,
+.temp_night,
+.info {
+	color: $color-light-grey;
+	font-size: 13px;
+
+	@media(max-width: $size-md) {
+		font-size: 12px;
+	}
+
+	@media(max-width: $size-xs) {
+		font-size: 11px;
+	}
+}
+
+.temp_night {
+	margin-bottom: 6px;
+}
+
+.icon {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
+
+	@media(max-width: $size-md) {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 0
+	}
+
+	@media(max-width: $size-xs) {
+		width: 40px;
+		height: 40px;
+	}
+
+	svg {
+		width: 100%;
+	}
+}

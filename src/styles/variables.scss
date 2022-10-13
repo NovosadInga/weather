@@ -1,0 +1,38 @@
+$color-black: #000;
+$color-grey: #4F4F4F;
+$color-light-grey: #939CB0;
+$color-dark-grey: #2E3035;
+$color-white: #fff;
+$color-blue: #4793FF;
+$color-light-blue: rgba(71, 147, 255, 0.2);
+
+$border-radius-md: 20px;
+$border-radius-sm: 10px;
+$border-radius-xs: 5px;
+
+$shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+
+$size-lg: 1260px;
+$size-md: 991px;
+$size-sm: 767px;
+$size-xs: 540px;
+
+$length-md: 20px;
+
+:root {
+	--body-background-dark: #{$color-black};
+	--body-background-light: #{$color-white};
+	--body-background-default: var(#{--body-background-light});
+
+	--card-background-dark: #{$color-grey};
+	--card-background-light: #{$color-white};
+	--card-background-default: var(#{--card-background-light});
+
+	--day-background-dark: #{$color-dark-grey};
+	--day-background-light: #{$color-light-blue};
+	--day-background-default: var(#{ --day-background-light});
+
+	--text-color-dark: #{$color-white};
+	--text-color-light: #{$color-black};
+	--text-color-default: var(#{--text-color-light});
+}

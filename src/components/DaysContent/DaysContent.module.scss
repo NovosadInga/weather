@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.days_list {
+	display: flex;
+	justify-content: center;
+	box-shadow: $shadow;
+	padding: 20px;
+	min-height: 245px;
+	background: var(#{--card-background-default});
+	border-radius: 0 0 $border-radius-md $border-radius-md;
+
+	@media(max-width: $size-md) {
+		min-height: 200px;
+	}
+}

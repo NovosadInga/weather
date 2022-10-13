@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.days_filters {
+	margin-bottom: 7px;
+	display: flex;
+
+	@media(max-width: $size-xs) {
+		justify-content: space-between;
+	}
+}

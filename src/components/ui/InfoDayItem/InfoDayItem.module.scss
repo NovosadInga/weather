@@ -1,0 +1,77 @@
+@import '../../../styles/variables.scss';
+
+.dayItem {
+	display: flex;
+	position: relative;
+	min-height: 38px;
+	align-items: center;
+	margin-bottom: 15px;
+	font-size: 20px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	@media(max-width: $size-lg) {
+		font-size: 16px;
+	}
+
+	@media(max-width: $size-md) {
+		font-size: 14px;
+	}
+
+	@media(max-width: $size-sm) {
+		margin-bottom: 5px;
+	}
+}
+
+:global(.small) {
+	font-size: 14px;
+
+	@media(max-width: $size-xs) {
+		font-size: 13px;
+	}
+
+	.title {
+		width: 100px
+	}
+}
+
+.icon {
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+	background: $color-white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin-right: 20px;
+
+	@media(max-width: $size-lg) {
+		margin-right: 15px;
+	}
+
+	@media(max-width: $size-sm) {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+
+}
+
+.title {
+	color: $color-light-grey;
+	width: 150px;
+	margin-right: 15px;
+	flex-shrink: 0;
+
+	@media(max-width: $size-lg) {
+		width: 100px;
+	}
+}
+
+.text {
+	color: var(#{--text-color-default})
+}

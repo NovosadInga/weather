@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+.dayInfo {
+	position: relative;
+	overflow: hidden;
+	padding: 40px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media(max-width: $size-md) {
+		padding: 20px;
+	}
+
+}
+
+.bg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0.5;
+
+	@media(max-width: $size-lg) {
+		right: -180px
+	}
+
+	@media(max-width: $size-sm) {
+		right: -250px
+	}
+}

@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.content {
+	padding: 40px 30px;
+	text-align: center;
+}
+
+.title {
+	font-size: 70px;
+	color: $color-light-grey;
+	margin: 0 0 40px;
+
+	@media(max-width: $size-xs) {
+		margin: 0 0 20px;
+	}
+}
+
+.img {
+	max-width: 100%;
+
+	@media(max-width: $size-md) {
+		max-width: 300px;
+	}
+
+	@media(max-width: $size-xs) {
+		max-width: 200px;
+	}
+}
+
+.text {
+	font-size: 24px;
+	max-width: 600px;
+	margin: 0 auto;
+	color: var(#{--text-color-default});
+	margin-bottom: 40px;
+
+	@media(max-width: $size-md) {
+		font-size: 20px;
+	}
+
+	@media(max-width: $size-xs) {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+	}
+}
