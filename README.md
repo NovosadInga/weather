@@ -1,8 +1,10 @@
 # Weather UA
 
 ## Links
-- `Repository` https://github.com/NovosadInga/weather
 - `Project` https://novosadinga.github.io/weather/
+
+- `Repository` https://github.com/NovosadInga/weather
+
 
 ![](https://github.com/NovosadInga/weather/blob/master/screen.png)
 
@@ -18,12 +20,12 @@
 ![](https://github.com/NovosadInga/weather/blob/master/structure.png)
 
 ## Використані технології
-	####React
-	    + Context API (для зміни теми додатку)
-	    + HOC для обробки процесу завантаження данних і виведення помилок
-		+ Компоненти вибору svg іконок
-	####React Router
-	####Typescript
-	####Redux Toolkit 
-		для зберігання бізнес логіки та асихронних запитів
-	####axios, react-select, classname, scss, робота з css змінними
+- `React`
+    + `Context API` (для зміни теми додатку)
+    + `HOC` для обробки процесу завантаження данних і виведення помилок
+	+ Компоненти вибору svg іконок
+- `React Router`
+- `Typescript`
+- `Redux Toolkit` 
+	для зберігання бізнес логіки та асихронних запитів
+- `axios`, `react-select`, `classname`, `scss`, робота з css змінними
