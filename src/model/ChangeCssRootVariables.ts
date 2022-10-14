@@ -1,5 +1,5 @@
 const root = document.querySelector(':root') as HTMLElement
-const variables = [
+const variables: string[] = [
 	'body-background',
 	'card-background',
 	'day-background',
